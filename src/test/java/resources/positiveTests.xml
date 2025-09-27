@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Positive tests">
+    <test name="positive">
+        <groups>
+            <run>
+                <include name="positive"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="human.HumanTest"/>
+            <class name="location.PlazaTest"/>
+            <class name="serviceClasses.FileIOTest"/>
+        </classes>
+    </test>
+</suite>

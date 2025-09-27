@@ -3,6 +3,7 @@ package homework3.human;
 import homework3.weapon.Rapier;
 import homework3.enums.TrainingLevel;
 import homework3.enums.Trait;
+import lombok.EqualsAndHashCode;
 
 import java.util.ArrayList;
 
