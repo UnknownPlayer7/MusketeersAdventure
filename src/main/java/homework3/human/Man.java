@@ -1,13 +1,20 @@
 package homework3.human;
 
 import homework3.enums.Trait;
+import lombok.EqualsAndHashCode;
+import lombok.Getter;
 
+@EqualsAndHashCode(exclude = {"isWounded", "isDrunk", "isSleep", "beerMugCount"})
 abstract public class Man {
     public final Trait trait;
+    @Getter
     protected final String name;
     protected boolean isWounded;
+    @Getter
     protected boolean isDrunk;
+    @Getter
     protected boolean isSleep;
+    @Getter
     protected int beerMugCount;
 
     public Man(String name, Trait trait) {
@@ -108,14 +115,6 @@ abstract public class Man {
 
     public boolean isTooDrunk() {
         return isDrunk && beerMugCount > 3;
-    }
-
-    public boolean isSleep() {
-        return isSleep;
-    }
-
-    public String getName() {
-        return name;
     }
 
     public void recover() {

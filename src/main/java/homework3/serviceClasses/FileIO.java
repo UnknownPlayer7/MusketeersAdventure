@@ -9,10 +9,10 @@ import java.nio.file.Path;
 
 public class FileIO {
 
-    private static final Path pathToDefaultMusketeers = Path.of("src\\main\\resources\\humans\\player.txt");
+    public static final Path PATH_TO_DEFAULT_MUSKETEERS = Path.of("src\\main\\resources\\humans\\player.txt");
 
     public static void savePlayer(Musketeer player) {
-        try(FileWriter writer = new FileWriter(pathToDefaultMusketeers.toString())) {
+        try(FileWriter writer = new FileWriter(PATH_TO_DEFAULT_MUSKETEERS.toString())) {
 
             writer.write(player.getMainInfo());
             System.out.println(ServiceMessage.SAVE_SUCCESS);
@@ -23,7 +23,7 @@ public class FileIO {
     }
 
     public static Musketeer loadPlayer() {
-        try(BufferedReader reader = new BufferedReader(new FileReader(String.valueOf(pathToDefaultMusketeers)))) {
+        try(BufferedReader reader = new BufferedReader(new FileReader(String.valueOf(PATH_TO_DEFAULT_MUSKETEERS)))) {
             String name = reader.readLine().trim();
             Trait trait = Trait.valueOf(reader.readLine().trim());
 
