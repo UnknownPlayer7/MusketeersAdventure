@@ -1,11 +1,11 @@
-package homework3.location;
+package adventure.location;
 
-import homework3.enums.Trait;
-import homework3.human.Citizen;
-import homework3.human.Man;
-import homework3.human.Musketeer;
-import homework3.serviceClasses.ConsoleHelper;
-import homework3.serviceClasses.PersonCreator;
+import adventure.enums.Trait;
+import adventure.human.Citizen;
+import adventure.human.Man;
+import adventure.human.Musketeer;
+import adventure.serviceClasses.ConsoleHelper;
+import adventure.serviceClasses.PersonCreator;
 
 import java.util.ArrayList;
 

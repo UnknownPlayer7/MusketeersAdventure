@@ -1,7 +1,7 @@
-package homework3.human;
+package adventure.human;
 
-import homework3.enums.TrainingLevel;
-import homework3.enums.Trait;
+import adventure.enums.TrainingLevel;
+import adventure.enums.Trait;
 
 public class Guardsman extends Soldier {
 

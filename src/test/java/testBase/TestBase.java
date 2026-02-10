@@ -1,9 +1,9 @@
 package testBase;
 
-import homework3.enums.Trait;
-import homework3.human.Guardsman;
-import homework3.human.Musketeer;
-import homework3.human.Soldier;
+import adventure.enums.Trait;
+import adventure.human.Guardsman;
+import adventure.human.Musketeer;
+import adventure.human.Soldier;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;

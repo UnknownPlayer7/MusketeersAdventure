@@ -1,6 +1,6 @@
-package homework3.human;
+package adventure.human;
 
-import homework3.enums.Trait;
+import adventure.enums.Trait;
 
 public class Citizen extends Man {
 

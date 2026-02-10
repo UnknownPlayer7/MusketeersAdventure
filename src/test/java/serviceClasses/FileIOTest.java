@@ -1,8 +1,8 @@
 package serviceClasses;
 
-import homework3.enums.Trait;
-import homework3.human.Musketeer;
-import homework3.serviceClasses.FileIO;
+import adventure.enums.Trait;
+import adventure.human.Musketeer;
+import adventure.serviceClasses.FileIO;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
@@ -23,7 +23,8 @@ public class FileIOTest {
         }
     }
 
-    @Test(groups = "positive")
+    //Test is no longe relevant after migration to PostgreSQL
+    @Test(enabled = false)
     public void saveToFile() {
         Musketeer expectedMusketeer = new Musketeer("Test", Trait.BRAWLER);
         Musketeer actualMusketeer;
@@ -42,13 +43,14 @@ public class FileIOTest {
 
     }
 
-    @Test(groups = "positive")
+    //Test is no longer relevant after migration to PostgreSQL
+    @Test(enabled = false)
     public void loadFromFile() {
         Musketeer expectedMusketeer = new Musketeer("Test", Trait.BRAWLER);
         FileIO.savePlayer(expectedMusketeer);
         Musketeer actualMusketeer = FileIO.loadPlayer();
 
-        Assert.assertEquals(actualMusketeer,expectedMusketeer);
+        Assert.assertEquals(actualMusketeer, expectedMusketeer);
     }
 
 }

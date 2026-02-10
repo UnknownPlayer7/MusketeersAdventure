@@ -1,9 +1,9 @@
-package homework3.location;
+package adventure.location;
 
-import homework3.human.Guardsman;
-import homework3.human.Musketeer;
-import homework3.serviceClasses.ConsoleHelper;
-import homework3.serviceClasses.PersonCreator;
+import adventure.human.Guardsman;
+import adventure.human.Musketeer;
+import adventure.serviceClasses.ConsoleHelper;
+import adventure.serviceClasses.PersonCreator;
 
 import java.util.ArrayList;
 

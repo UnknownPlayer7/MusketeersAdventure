@@ -1,7 +1,7 @@
 package human;
 
-import homework3.enums.Trait;
-import homework3.human.Musketeer;
+import adventure.enums.Trait;
+import adventure.human.Musketeer;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;

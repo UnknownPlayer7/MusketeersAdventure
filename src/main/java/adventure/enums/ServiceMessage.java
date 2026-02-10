@@ -1,4 +1,4 @@
-package homework3.enums;
+package adventure.enums;
 
 public enum ServiceMessage {
     SAVE_EXCEPTION("Не удалось записать данные в файл!"),

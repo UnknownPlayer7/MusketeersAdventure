@@ -1,10 +1,13 @@
-package homework3.serviceClasses;
+package adventure.serviceClasses;
 
-import homework3.enums.Trait;
-import homework3.human.Citizen;
-import homework3.human.Guardsman;
-import homework3.human.Musketeer;
+import adventure.enums.ServiceMessage;
+import adventure.enums.Trait;
+import adventure.human.Citizen;
+import adventure.human.Guardsman;
+import adventure.human.Musketeer;
 
+import java.io.BufferedReader;
+import java.io.FileReader;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -79,5 +82,13 @@ public class PersonCreator {
                                        new Guardsman("Гвардеец Ален", Trait.ACCOMPLISHED_DUELIST),
                                        new Guardsman("Гвардеец Даниэль", Trait.ACCOMPLISHED_DUELIST),
                                        new Guardsman("Гвардеец Шарль", Trait.ACCOMPLISHED_DUELIST)));
+    }
+
+    public Musketeer loadPlayer() {
+        Locator locator = new Locator();
+        String name = locator.getAttributeById(1,"name");
+        Trait trait = Trait.valueOf(locator.getAttributeById(1,"trait"));
+
+        return new Musketeer(name, trait);
     }
 }

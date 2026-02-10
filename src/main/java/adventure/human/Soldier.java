@@ -1,9 +1,8 @@
-package homework3.human;
+package adventure.human;
 
-import homework3.weapon.Rapier;
-import homework3.enums.TrainingLevel;
-import homework3.enums.Trait;
-import lombok.EqualsAndHashCode;
+import adventure.weapon.Rapier;
+import adventure.enums.TrainingLevel;
+import adventure.enums.Trait;
 
 import java.util.ArrayList;
 

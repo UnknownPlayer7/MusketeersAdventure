@@ -1,10 +1,12 @@
-package homework3.location;
+package adventure.location;
 
-import homework3.serviceClasses.ConsoleHelper;
-import homework3.serviceClasses.FileIO;
-import homework3.weapon.Rapier;
-import homework3.human.Musketeer;
+import adventure.serviceClasses.ConsoleHelper;
+import adventure.serviceClasses.DBLauncher;
+import adventure.serviceClasses.FileIO;
+import adventure.weapon.Rapier;
+import adventure.human.Musketeer;
 
+import java.lang.management.MemoryUsage;
 import java.util.ArrayList;
 
 public class Barracks {
@@ -90,7 +92,9 @@ public class Barracks {
             for (Musketeer musketeer : musketeers) {
                 musketeer.sleep();
             }
-            FileIO.savePlayer(musketeers.getLast());
+
+            Musketeer player = musketeers.getLast();
+            new DBLauncher().savePlayer(player.getName(), String.valueOf(player.trait));
             System.exit(0);
         } else {
             ConsoleHelper.noMusketeersHere("Казарма");

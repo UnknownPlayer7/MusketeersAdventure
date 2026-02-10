@@ -1,7 +1,7 @@
-package homework3.serviceClasses;
+package adventure.serviceClasses;
 
-import homework3.enums.Trait;
-import homework3.human.Musketeer;
+import adventure.enums.Trait;
+import adventure.human.Musketeer;
 
 import java.util.ArrayList;
 import java.util.Scanner;

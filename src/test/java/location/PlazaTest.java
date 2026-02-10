@@ -1,7 +1,7 @@
 package location;
 
-import homework3.location.Barracks;
-import homework3.location.Plaza;
+import adventure.location.Barracks;
+import adventure.location.Plaza;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import testBase.TestBase;

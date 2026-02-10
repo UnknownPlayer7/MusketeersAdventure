@@ -1,16 +1,15 @@
-package homework3;
+package adventure;
 
-import homework3.enums.Trait;
-import homework3.human.Musketeer;
-import homework3.location.Barracks;
-import homework3.serviceClasses.ConsoleHelper;
-import homework3.serviceClasses.PersonCreator;
-import homework3.serviceClasses.FileIO;
+import adventure.enums.Trait;
+import adventure.human.Musketeer;
+import adventure.location.Barracks;
+import adventure.serviceClasses.ConsoleHelper;
+import adventure.serviceClasses.PersonCreator;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class Homework3 {
+public class Adventure {
 
     private static final Barracks barracks = new Barracks();
     private static final ConsoleHelper consoleHelper = new ConsoleHelper();
@@ -35,13 +34,14 @@ public class Homework3 {
 
     private static Musketeer createPlayerMusketeer() {
         consoleHelper.showStartMenu();
+        PersonCreator personCreator = new PersonCreator();
 
         switch (consoleHelper.waitNumber()) {
             case 1 -> {
-                return FileIO.loadPlayer();
+                return personCreator.loadPlayer();
             }
             case 2 -> {
-                return new PersonCreator().createMusketeer();
+                return personCreator.createMusketeer();
             }
             default -> consoleHelper.showIncorrectNumberEnterMessage(1, 2);
         }

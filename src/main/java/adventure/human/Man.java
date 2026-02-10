@@ -1,6 +1,6 @@
-package homework3.human;
+package adventure.human;
 
-import homework3.enums.Trait;
+import adventure.enums.Trait;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
 
@@ -121,10 +121,7 @@ abstract public class Man {
         isWounded = false;
     }
 
-    public String getMainInfo() {
-        return String.format("""
-                %s
-                %s
-                """, name, trait);
+    public String[] getMainInfo() {
+        return new String[]{name, String.valueOf(trait)};
     }
 }

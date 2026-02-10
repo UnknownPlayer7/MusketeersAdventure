@@ -1,4 +1,4 @@
-package homework3.weapon;
+package adventure.weapon;
 
 public class Rapier {
     private String owner;

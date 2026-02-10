@@ -1,9 +1,9 @@
-import homework3.Homework3;
+import adventure.Adventure;
 
 public class Main {
 
     public static void main(String[] args) {
-        Homework3.showHomework();
+        Adventure.showHomework();
     }
 
 }

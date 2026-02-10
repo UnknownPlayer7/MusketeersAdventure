@@ -1,4 +1,4 @@
-package homework3.enums;
+package adventure.enums;
 
 public enum Trait {
     DRUNKARD("Пьяница"),
