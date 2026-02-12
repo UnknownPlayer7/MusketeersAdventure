@@ -28,5 +28,6 @@ The exit point of programm is to send musketeers sleep in the Barracks.
 ## Weapon:
 - Rapier
 
-## Note:
+## Notes:
 PostgreSQL is used to store player data (name, trait).
+Before running the app you must rename the file **`jdbc.example.properties`** to **`jdbc.properties`** and **`specify`** your database **`credentials`**.
