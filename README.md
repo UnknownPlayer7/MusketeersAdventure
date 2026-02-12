@@ -12,7 +12,7 @@ A Musketeer can have a certain character trait that gives him a small bonus:
 
 Definitly Musketeers are so perfectly trained that they get +20 to Fencing.
 
-To compete the program send the Musketeers to the Barracks to sleep.
+To complete the program send the Musketeers to the Barracks to sleep.
 
 ## Locations:
 - Tavern
