@@ -4,7 +4,7 @@ target/
 !**/src/test/**/target/
 
 ### Local DB credentials ###
-jdbc.properties
+src/main/resources/jdbc.properties
 
 ### IntelliJ IDEA ###
 .idea/modules.xml

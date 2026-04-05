@@ -7,9 +7,12 @@ import adventure.human.Musketeer;
 import java.io.*;
 import java.nio.file.Path;
 
-/*
-    Deprecated after migration to PostgreSQL
-    File-based storage is no longer used
+/**
+ * Deprecated after migration to PostgreSQL.
+ * <p>
+ * File-based storage is no longer used.
+ * <p>
+ * Use {@link DBLauncher} class instead.
 */
 @Deprecated
 public class FileIO {
