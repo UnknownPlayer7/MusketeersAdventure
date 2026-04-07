@@ -5,10 +5,11 @@ import java.util.*;
 
 public class DBLauncher {
 
-    private final String url = "jdbc:postgresql://localhost:5432/musketeersdb";
+    private final String url;
     private final Connection connection;
 
     public DBLauncher() {
+        url = new PropertyLoader("/application.properties").get("database.url");
         connection = connect();
     }
 
