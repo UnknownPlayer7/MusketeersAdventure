@@ -9,7 +9,7 @@ public class DBLauncher {
     private final Connection connection;
 
     public DBLauncher() {
-        url = new PropertyLoader("/application.properties").get("database.url");
+        url = new PropertyLoader("/jdbc.properties").get("database.url");
         connection = connect();
     }
 
